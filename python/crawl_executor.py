@@ -69,7 +69,7 @@ class CrawlExecutor(Executor):
                 print error_msg
                 return
                 
-            soup = BeautifulSoup(source)
+            soup = BeautifulSoup(source, "lxml")
 
             links = []
             try:
